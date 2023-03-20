@@ -9,26 +9,43 @@
 </head>
 <body class="m-1">
     <h3 class="bg-primary text-white p-3">Lista zastrzyków</h3>
-
-    <div class="my-1">
-        <input class="form-control" />
-        <button class="btn btn-primary mt-1">Dodaj</button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <form>
+                    <div class="form-group">
+                        <label>Zastrzyk</label>
+                        <input class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Miejsce</label>
+                        <input class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" />
+                        <label>Wykonane</label>
+                    </div>
+                    <button class="btn btn-primary">Dodaj</button>
+                </form>
+            </div>
+            <div class="col-8">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Zastrzyk</th>
+                            <th>Opis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Pierwszy zastrzyk - 14 marca</td><td>Tak</td></tr>
+                        <tr><td>Drugi zastrzyk - 20 marca</td><td>Tak</td></tr>
+                        <tr><td>Trzeci zastrzyk - 24 marca</td><td>Nie</td></tr>
+                        <tr><td>Czwart zastrzyk - 30 marca</td><td>Nie</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-
-    <table class="table table-stripped table-bordered">
-        <thead>
-            <tr>
-                <th>Zadanie</th>
-                <th>Wykonane</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>Pierwszy zastrzyk - 14 marca</td><td>Tak</td></tr>
-            <tr><td>Drugi zastrzyk - 20 marca</td><td>Tak</td></tr>
-            <tr><td>Trzeci zastrzyk - 24 marca</td><td>Nie</td></tr>
-            <tr><td>Czwarty zastrzyk - 30 marca</td><td>Nie</td></tr>
-        </tbody>
-    </table>
     
 </body>
 </html>
